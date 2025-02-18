@@ -1,10 +1,10 @@
 "use client";
 
-import { ChangeEvent, useState } from "react";
+import { useState } from "react";
 
 export default function Searchbar() {
   const [search, setSearch] = useState("");
-  const onChangeSearch = (e: ChangeEvent<HTMLInputElement>) => {
+  const onChangeSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
     setSearch(e.target.value);
   };
   return (
