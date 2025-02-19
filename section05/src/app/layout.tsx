@@ -1,6 +1,7 @@
 import "./globals.css";
 import Link from "next/link";
 import style from "./layout.module.css";
+import Footer from "@/components/footer";
 
 export default function RootLayout({
   children,
@@ -15,7 +16,7 @@ export default function RootLayout({
             <Link href={"/"}>📚 ONEBITE BOOKS</Link>
           </header>
           <main>{children}</main>
-          <footer>제작 @winterlood</footer>
+          <Footer />
         </div>
       </body>
     </html>
